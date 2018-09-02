@@ -1,4 +1,3 @@
-
 class Node:
     
     def __init__(self, data=None):
@@ -79,15 +78,16 @@ class SinglyLinkedList:
         self.tail = current.next
         return value
 
-
-words = ('eggs', 'ham', 'spam', 'nutella', 'cereals')
-ingredients = SinglyLinkedList()
-for word in words:
-    ingredients.append(word)
-print(ingredients)
-ingredients.delete('ham')
-print(ingredients)
-ingredients.delete('eggs')
-print(ingredients)
-print('Searching for spam...', ingredients.search('spam'))
-print('pop', ingredients.pop())
+if __name__ == '__main__':
+    words = ('eggs', 'ham', 'spam', 'nutella', 'cereals')
+    ingredients = SinglyLinkedList()
+    for word in words:
+        ingredients.append(word)
+    print(ingredients)
+    ingredients.delete('ham')
+    print(ingredients)
+    ingredients.delete('eggs')
+    print(ingredients)
+    print('Searching for spam...', ingredients.search('spam'))
+    print('pop', ingredients.pop())
+    
